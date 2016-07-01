@@ -1,0 +1,67 @@
+@import "normalize.css";
+
+body {
+  background-color: #202028;
+}
+h1{
+  margin: 0;
+}
+
+/* Logo */
+
+@keyframes logo-outer-intro {
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes logo-inner-intro {
+  100% {
+    opacity: 1;
+  }
+}
+
+#logo--l-outer,
+#logo--e-outer,
+#logo--d-outer,
+#logo--o-outer,
+#logo--r-outer,
+#logo--a-outer {
+  opacity: 0;
+  transform: translateY(-100%);
+  animation-name: logo-outer-intro;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+#logo--l-inner,
+#logo--e-inner-top,
+#logo--e-inner-bottom,
+#logo--d-inner,
+#logo--o-inner,
+#logo--r-inner,
+#logo--a-inner {
+  opacity: 0;
+  transform: translateX(10px);
+  animation-name: logo-outer-intro;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+#logo--l-outer { animation-delay: 0.0s; }
+#logo--e-outer { animation-delay: 0.2s; }
+#logo--d-outer { animation-delay: 0.4s; }
+#logo--o-outer { animation-delay: 0.6s; }
+#logo--r-outer { animation-delay: 0.8s; }
+#logo--a-outer { animation-delay: 1.0s; }
+
+#logo--l-inner        { animation-delay: 1.0s; }
+#logo--e-inner-top    { animation-delay: 1.2s; }
+#logo--e-inner-bottom { animation-delay: 1.2s; }
+#logo--d-inner        { animation-delay: 1.4s; }
+#logo--o-inner        { animation-delay: 1.6s; }
+#logo--r-inner        { animation-delay: 1.8s; }
+#logo--a-inner        { animation-delay: 2.0s; }
+

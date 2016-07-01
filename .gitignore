@@ -2,7 +2,12 @@
 
 # compiled output
 /dist
+/fastboot-dist
 /tmp
+
+# config
+/config/*.env
+/config/environment-user-dev.js
 
 # dependencies
 /node_modules
@@ -15,3 +20,6 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+
+# OS Junk
+.DS_Store
