@@ -1,8 +1,7 @@
-/*
 @keyframes logo-outer-intro {
   from {
     opacity: 0;
-    transform: translateY(-200px);
+    transform: translateY(-20vh);
   }
   to {
     opacity: 1;
@@ -12,14 +11,13 @@
 @keyframes logo-inner-intro {
   from {
     opacity: 0;
-    transform: translateX(15px);
+    transform: translateX(5vh);
   }
   to {
     opacity: 1;
     transform: translateX(0px);
   }
 }
-*/
 
 #logo {
   overflow: visible;
@@ -31,14 +29,12 @@
 #logo--o-outer,
 #logo--r-outer,
 #logo--a-outer {
-  /*
   animation-name: logo-outer-intro;
   opacity: 0;
   transform: translateY(-100%);
-  animation-duration: 0.75s;
+  animation-duration: 1.25s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
-  */
 }
 
 #logo--l-inner,
@@ -48,14 +44,12 @@
 #logo--o-inner,
 #logo--r-inner,
 #logo--a-inner {
-  /*
   animation-name: logo-inner-intro;
   opacity: 0;
   transform: translateX(15px);
-  animation-duration: 0.4s;
+  animation-duration: 1.4s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
-  */
 }
 
 #logo--l-outer { animation-delay: 0.0s; }

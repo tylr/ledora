@@ -1,10 +1,36 @@
+@keyframes dots-intro-even {
+  from {
+    r: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes dots-intro-odd {
+  from {
+    r: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .dots {
   min-width: 200%;
-  margin: 0 -50% 0 -50%
+  margin: 0 -50% 0 -50%;
 }
 .dots--pattern-circle:nth-of-type(even) {
   fill: #F08329;
+  animation-name: dots-intro-even;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
 .dots--pattern-circle:nth-of-type(odd) {
   fill: #E5E0D1;
+  animation-name: dots-intro-odd;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
