@@ -3,7 +3,17 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
+  registerPostCSSPlugin('postcss-import');
+  registerPostCSSPlugin('postcss-cssnext');
+
   var app = new EmberApp(defaults, {
+    styleProcessorOptions: {
+      processors: [{
+        type: 'postcss',
+        plugins: POSTCSS_PLUGINS
+      }],
+      extension: 'css'
+    },
     svg: {
       optimize: {
         plugins: [
@@ -31,3 +41,12 @@ module.exports = function(defaults) {
 
   return app.toTree();
 };
+
+const POSTCSS_PLUGINS = [];
+
+function registerPostCSSPlugin(moduleName, options) {
+  POSTCSS_PLUGINS.push({
+    module: require(moduleName),
+    options: options
+  });
+}

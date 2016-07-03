@@ -1,3 +1,10 @@
-.dots--circle {
+.dots {
+  min-width: 200%;
+  margin: 0 -50% 0 -50%
+}
+.dots--pattern-circle:nth-of-type(even) {
   fill: #F08329;
+}
+.dots--pattern-circle:nth-of-type(odd) {
+  fill: #E5E0D1;
 }

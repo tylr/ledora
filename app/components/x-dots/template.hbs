@@ -1,1 +1,8 @@
-<circle class="dots--circle" cx="15" cy="15" r="15"/>
+<defs>
+  <pattern id="dots--pattern" x="0" y="0" width={{patternWidth}} height={{height}} patternUnits="userSpaceOnUse">
+    {{#each rows as |row|}}
+      <circle class="dots--pattern-circle" cy={{row.cy}} cx={{radius}} r={{radius}} />
+    {{/each}}
+  </pattern>
+</defs>
+<rect fill="url(#dots--pattern)" width="100%" height={{height}} y="0" />
