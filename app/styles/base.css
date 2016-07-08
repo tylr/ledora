@@ -1,7 +1,19 @@
-html, body {
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
   padding: 0;
+  margin: 0;
+  color: #E5E0D1;
   background-color: #202028;
 }
 h1, h2, h3, h4, h5, h6, a, figure {
   margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+main {
 }

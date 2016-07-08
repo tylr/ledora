@@ -2,5 +2,6 @@
 @import "base";
 
 /* Components */
-@import "/x-dots/style";
+@import "/x-nav/style";
 @import "/x-header/style";
+@import "/x-dots/style";

@@ -1,9 +1,9 @@
 <div class="header--viewport">
   {{x-dots}}
-  <h1 class="header--heading">
-    <a href="/" class="header--heading-link">
-      {{inline-svg "ledora" class="logo"}}
-    </a>
-  </h1>
+  {{x-dots}}
+  {{#link-to "index" class="header--logo-link"}}
+    {{inline-svg "ledora" class="logo"}}
+  {{/link-to}}
+  {{x-dots}}
   {{x-dots}}
 </div>

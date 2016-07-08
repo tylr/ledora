@@ -1,6 +1,16 @@
+.dots {
+  width: 200%;
+  margin: 0 -50%;
+}
+.dots--pattern-circle:nth-of-type(odd) {
+  fill: #E5E0D1;
+}
+.dots--pattern-circle:nth-of-type(even) {
+  fill: #F08329;
+}
+/*
 @keyframes dots-intro-even {
   from {
-    r: 0;
     opacity: 0;
   }
   to {
@@ -9,7 +19,6 @@
 }
 @keyframes dots-intro-odd {
   from {
-    r: 0;
     opacity: 0;
   }
   to {
@@ -17,12 +26,20 @@
   }
 }
 .dots {
+  display: none;
   min-width: 200%;
-  margin: 0 -50% 0 -50%;
+  margin: 4vh -50% 4vh -50%;
 }
-.dots--pattern-circle:nth-of-type(even) {
-  fill: #F08329;
-  animation-name: dots-intro-even;
+.index .dots{
+  display: initial;
+}
+.dots.above-logo {
+  margin-bottom: 0;
+}
+.dots.below-logo {
+  margin-top: 0;
+}
+.dots--pattern-circle {
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
@@ -30,7 +47,10 @@
 .dots--pattern-circle:nth-of-type(odd) {
   fill: #E5E0D1;
   animation-name: dots-intro-odd;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
 }
+.dots--pattern-circle:nth-of-type(even) {
+  fill: #F08329;
+  animation-name: dots-intro-even;
+}
+*/
+

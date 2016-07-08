@@ -1,0 +1,19 @@
+/*
+.nav {
+  font-size: 24px;
+}
+.nav--link {
+  padding: 10px;
+  position: fixed;
+  background-color: #F08329;
+  z-index: 1000;
+}
+.nav--link.info {
+  top: 0;
+  right: 0;
+}
+.nav--link.work {
+  bottom: 0;
+  left: 0;
+}
+*/
